@@ -121,7 +121,6 @@ p.italic {
 
 a {
     color: #0a0a0a;
-    text-decoration: none;
 }
 
 a:hover {
@@ -129,9 +128,8 @@ a:hover {
     cursor: pointer;
 }
 
-.link-underline {
-    text-decoration: underline;
-}
+.menu li a {text-decoration: none;}
+
 
 @media (max-width:767px) {
     p {
@@ -152,7 +150,7 @@ a:hover {
     z-index: -1;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 50%;
     height: calc(100vh - 70px);
     margin: 0 auto;
     position: relative;
@@ -177,7 +175,7 @@ a:hover {
 
 .header-logotype-graphics {
     display: block;
-    width: 75%;
+    width: 100%;
     position: relative;
     margin: 0 auto;
     top:0;  
@@ -202,6 +200,11 @@ footer {
 .narrow {
     width: 50%;
     margin: 0 auto;
+}
+
+.center {
+    justify-content: center;
+    display: flex;
 }
 
 .full-width {
@@ -325,6 +328,11 @@ footer {
 
     .spacing-small {
         margin: 120px auto;
+    }
+
+    .signature-logo {
+        width: 55%;
+        margin: 0 auto;
     }
 
 /* NAV */
