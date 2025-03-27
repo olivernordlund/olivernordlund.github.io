@@ -8,23 +8,19 @@
     <meta name="author" content="Your Name">
     <title>Klara & Oliver</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-
-
-    <div class="header-gradient"></div>
-    <div class="spacing"></div>
+    <!--<div class="header-gradient"></div>-->
     <div class="header-logotype">
         <div class="header-logotype-graphics"> 
-        <!--<img src="img/ok-sign.png">-->
+        <img src="img/ok-sign.png">
         <!--<img src="img/illu.png">-->       
         </div>
         <div class="header-logotype-text"><p>Varmt välkommen på bröllop<br>Lördagen den 16 Augusti<br>på Rönnells Antikvariat</p></div>
     </div>
 
-    <div class="header" id="myHeader">
+    <div class="header" >
         <ul class="menu">
             <li>Mer info kommer snart</li>
             <!--<li><a href="#information">Information</a></li>-->
@@ -36,16 +32,16 @@
 
     <main>
         <section>
-
-            <div class="container wide">
+            <div class="container full-width">
                 <div class="grid">
                     <img src="img/vi-2.jpg" alt="Image 1" class="item1">
-                    <img src="img/wedding-cake-2.jpg" alt="Image 3" class="item2">
-                    <img src="img/gullig.jpg" alt="Image 2" class="item3">
-
+                    <img src="img/3d.gif" alt="Image 3" class="item2">
+                    <img src="img/woodcut-2.jpg" alt="Image 2" class="item3">
+                    <img src="img/cute.png" alt="Image 1" class="item6">
+                    <img src="img/soon-married.gif" alt="Image 3" class="item4">
+                    <img src="img/gullig.jpg" alt="Image 1" class="item5">
                 </div>
             </div>
-
             
             <!--<div class="narrow">
                 <p>Vi vill jättegärna fira våran dag med er och hoppas att ni vill vara med oss. Här på sidan hittar du allt du behöver veta om dagen.
@@ -54,7 +50,7 @@
 
         </section>
 
-        <section id="information">
+       <!-- <section id="information">
             <div class="narrow spacing-small">
                 <div class="img-headline-container"><img src="img/vigsel.png" class="headline"></div>  
                 <p>Den <i>16 augusti kl. 14.00</i> samlas vi på <strong>Rönnells Antikvariat</strong> för vigsel, på Birger Jarlsgatan 32B. Därefter tar vi oss gemensamt till Lindholmen där firande och middag kommer att äga rum. Vi önskar att ni klär er finklätt – välj något elegant, något som ni känner er snygga i.
@@ -72,20 +68,20 @@
         
         <div class="narrow">
                 <img src="img/lindholmen-2.png">
-            </div>
+            </div>-->
 
-        <section id="kontakt">
+        <!--<section id="kontakt">
             <div class="narrow">
                 <div class="img-headline-container"><img src="img/kontakt.png" class="headline"></div>  
                 <p>Om det dyker upp frågor så kan ni kontakta oss på 
                 </p>
                 <p class="text-center">Oliver 070 609 49 92<br>Klara 073 805 88 55</p>
             </div>
-        </section>
+        </section>-->
         
         <section id="osa">
             <div class="narrow spacing-small">
-                <p>OSA senast den 15 maj <a href="osa.html" class="link-underline">på denna länk</a>. Vi hoppas att du kan komma!</p>
+                <p>OSA senast den 15 maj <a href="osa.html" class="link-underline">på denna länk</a>. Vi hoppas att du kan komma! Tveka inte att höra av dig om du har några frågor :-)</p>
             </div>
         </section>
 
@@ -100,22 +96,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
-
-    <script>
-       document.addEventListener("DOMContentLoaded", function () {
-    let menu = document.getElementById('menu');
-    if (menu) {
-        let offset = menu.offsetHeight;
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > offset) {
-                menu.classList.add("sticky");
-            } else {
-                menu.classList.remove("sticky");
-            }
-        });
-    }
-});
-    </script>
 
 </body>
 
