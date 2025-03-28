@@ -146,7 +146,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: calc(100vh - 70px);
+    height: calc(90vh - 70px);
     margin: 0 auto;
     position: relative;
     align-items: center;
