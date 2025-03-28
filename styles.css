@@ -257,9 +257,10 @@ footer {
     height: auto;
     object-fit: cover;
 }
-
+/*
 .item1 {
     transform: rotate(-2deg);
+    grid-column: 2;
     order: 1;
 }
 
@@ -271,8 +272,26 @@ footer {
 
 .item3 {
     transform: rotate(6deg);
+    grid-column: 1;
     order: 3;
-}
+}*/
+.item1 {
+    transform: rotate(-2deg);
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    transform: rotate(3deg);
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .item3 {
+    transform: rotate(6deg);
+    grid-column: 1;
+    grid-row: 3;
+  }
 
 .back-to-top {
     display: flex;
