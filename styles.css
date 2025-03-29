@@ -140,7 +140,7 @@ a:hover {
 }
 
 main {
-    background: linear-gradient(360deg, hsl(317, 82%, 80%) 0%, rgba(255, 255, 247,0) 100%);
+    background: linear-gradient(360deg, rgba(246, 162, 222, 0.7) 0%, rgba(255, 255, 247,0) 100%);
 }
 
 
@@ -190,7 +190,7 @@ section {
 }
 
 .narrow {
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
 }
 
