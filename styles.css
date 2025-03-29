@@ -80,7 +80,7 @@ body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     justify-items: center;
-    background-color: rgb(255, 255, 247);
+    background-color: #fffff7;
 }
 
 /* Images */ 
@@ -137,6 +137,10 @@ a:hover {
 
 .menu li a {
     text-decoration: none;
+}
+
+main {
+    background: linear-gradient(360deg, hsl(317, 82%, 80%) 0%, rgba(255, 255, 247,0) 100%);
 }
 
 
@@ -252,6 +256,8 @@ display: flex;
 grid-column: 1 / span 2;
 grid-row: 2;
 justify-content: center;
+margin-top: -75px;
+z-index: 100;
 }
 
 @media (max-width: 1024px) {
@@ -278,6 +284,7 @@ transform: rotate(6deg);
         grid-column: 2 / span 1;
         grid-row: 1;
         justify-content: center;
+        margin-top: 0;
         }
 
         .item2 img {
