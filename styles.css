@@ -83,7 +83,6 @@ body {
     grid-template-rows: auto auto 1fr auto;
     justify-items: center;
     background-color: rgb(255, 255, 247);
-    color: #0a0a0a;
 }
 
 /* Images */ 
@@ -111,7 +110,7 @@ img.headline {
 
 p {
     font-size: 20px;
-    color:red;
+    color:#0a0a0a;
     margin: 1em 0;
     text-align: justify;
 }
@@ -125,10 +124,6 @@ p {
     }
 }
 
-p.italic {
-    font-family: 'Tid-BookItalic';
-}
-
 a {
     color: #0a0a0a;
 }
@@ -138,7 +133,9 @@ a:hover {
     cursor: pointer;
 }
 
-.menu li a {text-decoration: none;}
+.menu li a {
+    text-decoration: none;
+}
 
 /* End: Typography */ 
 
@@ -233,7 +230,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
 .grid {
@@ -283,28 +280,30 @@ footer {
     grid-row: 1;
   }
 
-  .item1-img {
-    transform: rotate(-2deg);
-  }
-  
-  .item2 {
-    grid-column: 1 / span 2;
-    grid-row: 2;
-    justify-content: center;
-  }
+.item1 img {
+transform: rotate(-2deg);
+}
 
-  .item3-img {
-    transform: rotate(3deg);
-  }
-  
-  .item3 {
-    grid-column: 2;
-    grid-row: 1;
-  }
+.item2 {
+display: flex;
+grid-column: 1 / span 2;
+grid-row: 2;
+justify-content: center;
+}
 
-  .item3-img {
-    transform: rotate(6deg);
-  }
+.item2 img {
+transform: rotate(7deg);
+width: 75%;
+}
+
+.item3 {
+grid-column: 2;
+grid-row: 1;
+}
+
+.item3 img {
+transform: rotate(6deg);
+}
 
 .back-to-top {
     display: flex;
@@ -356,17 +355,17 @@ footer {
 }
 
 .spacing-small {
-    margin: 0 auto 120px auto;
+    margin: 0 auto 60px auto;
 }
 
-.signature-logo {
-    width: 55%;
+.signature {
+    width: 65%;
     margin: 0 auto;
 }
 
 /* NAV */
 .header {
-    font-size: 24px;
+    font-size: 16px;
     height: 70px;
     position: sticky;
     top: 0;
