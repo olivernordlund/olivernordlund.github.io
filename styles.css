@@ -196,6 +196,15 @@ p {
     text-align: justify;
 }
 
+.text-small {
+    font-size: 16px;
+    padding: 0 2rem;
+}
+
+.narrow-text {
+    width: 90%;
+}
+
 @media (min-width: 1024px) {
 
     p {
@@ -207,6 +216,14 @@ p {
 
 .text-center {
     text-align: center;
+}
+
+.rubrik {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: .95rem;
+    margin:0;
 }
 
 /* Links */
