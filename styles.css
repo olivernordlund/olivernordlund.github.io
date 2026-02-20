@@ -242,7 +242,7 @@ a:hover {
 }
 
 main {
-    background: linear-gradient(360deg, rgba(246, 162, 222, 0.7) 0%, rgba(255, 255, 247, 0) 100%);
+    background: linear-gradient(360deg, oklch(83.823% 0.07215 243.731 / 0.7) 0%, rgba(255, 255, 247, 0) 100%);
 }
 
 
@@ -266,7 +266,7 @@ main {
         z-index: -1;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: %;
         height: calc(100vh - 70px);
         margin: 0 auto;
         position: relative;
@@ -495,4 +495,61 @@ section {
     width: 100vw;
     height: 100vh;
     margin: 3rem 0;
+}
+
+.wedding-gallery {
+    column-count: 2;
+    column-gap: 40px;
+    width: 90%;
+}
+
+@media (min-width: 1024px) {
+    .wedding-gallery {
+        column-count: 3;
+        width: 85%;
+    }
+}
+
+
+
+.wg-item {
+    break-inside: avoid;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.wg-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* polaroid */
+
+.wg-rotate-left {
+    transform: rotate(-2deg);
+}
+
+.wg-rotate-right {
+    transform: rotate(2.5deg);
+}
+
+.wg-rotate-none {
+    transform: rotate(0.5deg);
+}
+
+.wg-caption {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.7;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+/* mobil / desktop */
+@media (min-width: 1024px) {
+  .wg-caption {
+    font-size: 15px;
+  }
 }
