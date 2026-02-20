@@ -83,11 +83,16 @@ function renderSection(parentEl, title, items) {
     const section = document.createElement("div");
     section.className = "wg-section";
 
+    const heading = document.createElement("h2");
+    heading.className = "wg-heading";
+    heading.textContent = title;
+
     const grid = document.createElement("div");
     grid.className = "wedding-gallery-grid";
 
     shuffleCopy(items).forEach(item => renderItem(grid, item));
 
+    section.appendChild(heading);
     section.appendChild(grid);
     parentEl.appendChild(section);
 }
