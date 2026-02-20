@@ -23,6 +23,8 @@
   { "src": "img/22.jpg", "order": 22, "caption": "22", "category": "vigsel" },
   { "src": "img/23.jpg", "order": 23, "caption": "23", "category": "vigsel" },
   { "src": "img/24.jpg", "order": 24, "caption": "24", "category": "vigsel" },
+  { "src": "img/ronnels-1.jpg", "order": 75, "caption": "24", "category": "vigsel" },
+  { "src": "img/ronnels-2.jpg", "order": 76, "caption": "24", "category": "vigsel" },
 
   { "src": "img/25.jpg", "order": 25, "caption": "25", "category": "vigsel" },
   { "src": "img/26.jpg", "order": 26, "caption": "26", "category": "vigsel" },
@@ -47,6 +49,8 @@
   { "src": "img/45.jpg", "order": 45, "caption": "45", "category": "resa" },
   { "src": "img/46.jpg", "order": 46, "caption": "46", "category": "resa" },
   { "src": "img/47.jpg", "order": 47, "caption": "47", "category": "resa" },
+    { "src": "img/resan-1.jpg", "order": 77, "caption": "24", "category": "resa" },
+    { "src": "img/resan-2.jpg", "order": 78, "caption": "24", "category": "resa" },
 
   { "src": "img/48.jpg", "order": 48, "caption": "48", "category": "on" },
   { "src": "img/49.jpg", "order": 49, "caption": "49", "category": "on" },
@@ -74,5 +78,9 @@
   { "src": "img/71.jpg", "order": 71, "caption": "71", "category": "on" },
   { "src": "img/72.jpg", "order": 72, "caption": "72", "category": "on" },
   { "src": "img/73.jpg", "order": 73, "caption": "73", "category": "on" },
-  { "src": "img/74.jpg", "order": 74, "caption": "74", "category": "on" }
+  { "src": "img/74.jpg", "order": 74, "caption": "74", "category": "on" },
+  { "src": "img/fest-1.jpg", "order": 79, "caption": "24", "category": "on" },
+  { "src": "img/fest-2.jpg", "order": 80, "caption": "24", "category": "on" },
+  { "src": "img/fest-3.jpg", "order": 81, "caption": "24", "category": "on" },
+
     ]
