@@ -498,56 +498,16 @@ section {
 }
 
 .wedding-gallery {
-    width: 100%;
-    margin: 0 auto;
-    /* Viktigt: inga kolumner på wrappern, annars hamnar kapitel i olika kolumner */
-    column-count: initial;
-    column-gap: initial;
-}
-
-/* Varje kapitel får sin egen masonry-grid */
-.wedding-gallery-grid {
     column-count: 2;
     column-gap: 40px;
     width: 90%;
-    margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
-    .wedding-gallery-grid {
+    .wedding-gallery {
         column-count: 3;
         width: 85%;
     }
-}
-
-/* Nolla din globala img-margin inne i galleriet */
-.wedding-gallery-grid img {
-    margin: 0;
-}
-
-.wg-section {
-    width: 100%;
-    margin: 0 auto 140px auto;
-}
-
-.wg-heading {
-    font-family: Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: .9rem;
-    text-align: center;
-    margin-bottom: 25px;
-    opacity: 0.65;
-}
-
-.wg-heading::after {
-    content: "";
-    display: block;
-    width: 140px;
-    height: 1px;
-    background: #0a0a0a;
-    opacity: 0.2;
-    margin: 18px auto 0 auto;
 }
 
 

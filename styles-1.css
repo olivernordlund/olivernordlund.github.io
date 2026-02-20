@@ -1,0 +1,179 @@
+/* =========================
+   CSS Reset (Eric Meyer v2.0)
+   ========================= */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* =========================
+   Fonts
+   ========================= */
+
+@font-face {
+    font-family: 'Tid-Book';
+    src: url('fonts/Tid-Book.woff') format('woff'),
+         url('fonts/Tid-Book.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Tid-BookItalic';
+    src: url('fonts/Tid-BookItalic.woff') format('woff'),
+         url('fonts/Tid-BookItalic.woff2') format('woff2');
+}
+
+/* =========================
+   Base
+   ========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tid-Book', Helvetica, serif;
+    line-height: 1.28;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    justify-items: center;
+    background-color: #fffff7;
+}
+
+/* =========================
+   Images
+   ========================= */
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* =========================
+   Typography
+   ========================= */
+
+p {
+    font-size: 20px;
+    color: #0a0a0a;
+    margin: 1em 0;
+    text-align: justify;
+}
+
+@media (min-width: 1024px) {
+    p {
+        font-size: 28px;
+    }
+}
+
+.text-center { text-align: center; }
+
+/* =========================
+   Gallery Sections
+   ========================= */
+
+.wg-section {
+    width: 100%;
+    margin: 0 auto 140px auto;
+}
+
+.wg-heading {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: 25px;
+    opacity: 0.65;
+}
+
+/* Divider line under heading */
+.wg-heading::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 1px;
+    background: #0a0a0a;
+    opacity: 0.2;
+    margin: 18px auto 0 auto;
+}
+
+/* =========================
+   Masonry Grid per Section
+   ========================= */
+
+.wedding-gallery-grid {
+    column-count: 2;
+    column-gap: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .wedding-gallery-grid {
+        column-count: 3;
+        width: 85%;
+    }
+}
+
+/* Prevent column breaks inside items */
+.wg-item {
+    break-inside: avoid;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Override global img margin inside gallery */
+.wedding-gallery-grid img {
+    margin: 0;
+}
+
+/* =========================
+   Polaroid rotation
+   ========================= */
+
+.wg-rotate-left  { transform: rotate(-2deg); }
+.wg-rotate-right { transform: rotate(2.5deg); }
+.wg-rotate-none  { transform: rotate(0.5deg); }
+
+/* =========================
+   Caption
+   ========================= */
+
+.wg-caption {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+@media (min-width: 1024px) {
+    .wg-caption {
+        font-size: 15px;
+    }
+}
