@@ -88,7 +88,6 @@ function renderSection(parentEl, title, items) {
 
     shuffleCopy(items).forEach(item => renderItem(grid, item));
 
-    section.appendChild(heading);
     section.appendChild(grid);
     parentEl.appendChild(section);
 }
