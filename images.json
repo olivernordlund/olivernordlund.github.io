@@ -24,9 +24,9 @@
   { "src": "img/23.jpg", "order": 23, "caption": "23", "category": "vigsel" },
   { "src": "img/24.jpg", "order": 24, "caption": "24", "category": "vigsel" },
 
-  { "src": "img/25.jpg", "order": 25, "caption": "25", "category": "resa" },
-  { "src": "img/26.jpg", "order": 26, "caption": "26", "category": "resa" },
-  { "src": "img/27.jpg", "order": 27, "caption": "27", "category": "resa" },
+  { "src": "img/25.jpg", "order": 25, "caption": "25", "category": "vigsel" },
+  { "src": "img/26.jpg", "order": 26, "caption": "26", "category": "vigsel" },
+  { "src": "img/27.jpg", "order": 27, "caption": "27", "category": "vigsel" },
   { "src": "img/28.jpg", "order": 28, "caption": "28", "category": "resa" },
   { "src": "img/29.jpg", "order": 29, "caption": "29", "category": "resa" },
   { "src": "img/30.jpg", "order": 30, "caption": "30", "category": "resa" },
