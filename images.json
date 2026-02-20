@@ -84,6 +84,5 @@
   { "src": "img/fest-5.jpg", "order": 83, "caption": "24", "category": "on" },
   { "src": "img/ronnells-3.jpg", "order": 84, "caption": "24", "category": "vigsel" },
   { "src": "img/ronnells-4.jpg", "order": 85, "caption": "24", "category": "vigsel" },
-  { "src": "img/ronnells-5.jpg", "order": 86, "caption": "24", "category": "vigsel" },
-
+  { "src": "img/ronnells-5.jpg", "order": 86, "caption": "24", "category": "vigsel" }
     ]
