@@ -37,8 +37,7 @@ $(document).ready(function () {
 
 
 /* =========================
-   Wedding gallery (JSON) – grouped by category (no headings)
-   Requires images.json with category: "vigsel" | "resa" | "on"
+   Wedding gallery (JSON) – grouped by category
    ========================= */
 
 const galleryEl = document.getElementById("wedding-gallery");
@@ -50,13 +49,8 @@ const rotations = [
 ];
 
 async function loadImages() {
-    // More robust pathing if you ever move index.html into a subfolder
-    const url = new URL("images.json", window.location.href);
-    const response = await fetch(url.toString(), { cache: "no-store" });
-
-    if (!response.ok) {
-        throw new Error(`Could not load images.json (HTTP ${response.status})`);
-    }
+    const response = await fetch("images.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("Could not load images.json");
     return response.json();
 }
 
@@ -85,15 +79,20 @@ function renderItem(gridEl, item) {
     gridEl.appendChild(div);
 }
 
-function renderSection(parentEl, items) {
+function renderSection(parentEl, title, items) {
     const section = document.createElement("div");
     section.className = "wg-section";
+
+    const heading = document.createElement("h2");
+    heading.className = "wg-heading";
+    heading.textContent = title;
 
     const grid = document.createElement("div");
     grid.className = "wedding-gallery-grid";
 
     shuffleCopy(items).forEach(item => renderItem(grid, item));
 
+    section.appendChild(heading);
     section.appendChild(grid);
     parentEl.appendChild(section);
 }
@@ -106,24 +105,18 @@ async function buildGallery() {
     try {
         const images = await loadImages();
 
-        // Keep chapter order fixed, random within each chapter
         const vigsel = images.filter(i => i.category === "vigsel");
         const resa = images.filter(i => i.category === "resa");
         const on = images.filter(i => i.category === "on");
 
-        // If something is miscategorized, show it last (optional)
-        const other = images.filter(i => !["vigsel", "resa", "on"].includes(i.category));
-
-        renderSection(galleryEl, vigsel);
-        renderSection(galleryEl, resa);
-        renderSection(galleryEl, on);
-        if (other.length) renderSection(galleryEl, other);
+        renderSection(galleryEl, "Vigsel", vigsel);
+        renderSection(galleryEl, "Resan till ön", resa);
+        renderSection(galleryEl, "På ön", on);
 
     } catch (err) {
         console.error(err);
-
         galleryEl.innerHTML = `<p class="text-center" style="padding:16px;background:#fff;border-radius:12px;">
-          Kunde inte ladda galleriet (images.json). Kontrollera att <strong>images.json</strong> finns bredvid index.html och går att öppna i webbläsaren.
+          Kunde inte ladda galleriet (images.json). Kör sidan via en server (inte file://).
         </p>`;
     }
 }
