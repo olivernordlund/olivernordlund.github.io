@@ -254,7 +254,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: calc(10vh - 70px);
+    height: 30vh;
     margin: 0 auto;
     position: relative;
     align-items: center;
@@ -268,7 +268,7 @@ main {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: calc(10vh - 70px);
+        height: 30vh;
         margin: 0 auto;
         position: relative;
         align-items: center;
