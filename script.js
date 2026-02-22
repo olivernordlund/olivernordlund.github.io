@@ -75,7 +75,12 @@ function renderItem(gridEl, item) {
 
     div.appendChild(img);
 
-
+    if (item.caption && String(item.caption).trim() !== "") {
+        const caption = document.createElement("p");
+        caption.className = "wg-caption";
+        caption.textContent = item.caption;
+        div.appendChild(caption);
+    }
 
     gridEl.appendChild(div);
 }
