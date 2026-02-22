@@ -243,6 +243,7 @@ a:hover {
 
 main {
     background: linear-gradient(360deg, oklch(83.823% 0.07215 243.731 / 0.7) 0%, rgba(255, 255, 247, 0) 100%);
+    margin-top: 3rem;
 }
 
 
